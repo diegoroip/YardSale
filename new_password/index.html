@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/tablet.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width:1024px)">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 
+        font-family: 'Quicksand', sans-serif; 
+    -->
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <img src="../assets/logos/logo_yard_sale.svg" alt="logo" class="logo">
+            <h1 class="title"> Create a new password</h2>
+            <p class="subtitle">Enter a new password for your account</p>
+
+            <form action="/" class="form">
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" placeholder="*********" class="input-password">
+            </form>
+
+            <form action="/" class="form">
+                <label for="re-enter-password" class="label">Re-enter Password</label>
+                <input type="password" id="re-enter-password" placeholder="*********" class="input-password">
+            </form>
+            <input type="submit" value="Confirm" class="login-button">
+        </div>
+    </div>
+</body>
+</html> 
