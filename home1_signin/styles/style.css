@@ -1,0 +1,245 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --primary-color: #ACD9B2;
+    --dark: #232830;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.home1 {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.home1__container-box {
+    padding-top: 10px;
+    width: 95%;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 3vh;
+    /* border: solid; */
+}
+
+header {
+    display: grid;
+    grid-template-areas:
+    "logo-menu logo-company logo-cart"
+    "input-search input-search input-search"
+    "header-menu header-menu header-menu"
+    "sort-list sort-list sort-list";
+    grid-template-columns: 1fr 1fr 1fr;
+
+    row-gap: 15px;
+}
+
+.header-sign-in {
+    display: none;
+}
+
+.logo-menu {
+    grid-area: logo-menu;
+    align-self: center;
+    justify-self: left;
+    /* order: 1; */
+}
+
+.logo-company {
+    grid-area: logo-company;
+    justify-self: center;
+    align-self: center;
+    /* order: 2; */
+}
+
+.logo-cart {
+    grid-area: logo-cart;
+    align-self: center;
+    justify-self: right;
+    /* order:3; */
+}
+
+.line {
+    display: none;
+}
+
+.input-search {
+    grid-area: input-search;
+    align-self: center;
+    justify-self: center;
+
+    width: 95%;
+    height: 42px;
+
+    /* border: solid; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* order:4; */
+}
+
+.input-search i {
+    font-size: 1.6rem;
+    color: var(--very-light-pink);
+}
+
+.search-text {
+    margin-left: 5px;
+    width: 100%;
+    border: none;
+}
+
+::placeholder {
+    color: var(--very-light-pink);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 20px;
+}
+
+.header-menu {
+    /* order: 5; */
+    grid-area: header-menu;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+    overflow-x: scroll;
+    overscroll-behavior-x: contain; 
+    scroll-snap-type: x mandatory;
+}
+
+.menu-list li{
+    padding: 5px 10px;
+    text-decoration: none;
+    list-style: none;
+    align-self: center;
+
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 20px;
+    color: var(--very-light-pink);
+}
+
+.menu-list .menu-all {
+    border: solid 1px var(--primary-color);
+    color: var(--primary-color);
+
+    font-weight: 700;
+}
+
+.sort-list {
+    grid-area: sort-list;
+    justify-self: center;
+
+    font-size: 1.4rem;
+    line-height: 17.5px;
+    /* border: solid; */
+}
+
+.sort-list p {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.sort-list span {
+    margin-left: 5px;
+}
+
+.down-arrow {
+    margin-left: 2px;
+    transform: rotateZ(90deg);
+    align-self: center;
+
+    height: 8px;
+    width: 6px;
+    filter: brightness(0%);
+}
+
+.catalog__container-box {
+    /* border: solid; */
+    /* padding-top: 5px; */
+
+    display: flex;
+    row-gap: 25px;
+    column-gap: 15px;
+    flex-wrap: wrap;
+
+    height: 70vh;
+    overflow-y: scroll;
+    overscroll-behavior-y: contain; 
+    scroll-snap-type: y mandatory;
+
+    justify-content: center;
+}
+
+.catalog__container-box .item {
+    height: 198.594px;
+    width: 170px;
+    /* border: solid; */
+}
+
+.image {
+    border-radius: 15%;
+    height: 153px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 40%;
+}
+
+.price-item {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* border: solid; */
+}
+
+.price-text {
+    /* border: solid; */
+}
+
+.price-text h1 {
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 18.75px;
+}
+
+.price-text span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.price-item .price-icon {
+    justify-self: right;
+}
+
+/* 375-676 */
+
+.input-search-tablet {
+    display: none;
+}
+
+.sort-list-tablet {
+    display: none;
+}

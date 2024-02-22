@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/tablet.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width:1024px)">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 
+        font-family: 'Quicksand', sans-serif; 
+    -->
 </head>
 <body>
-    
+    <div class="container">
+        <div class="login">
+            <figure class="logo-box">
+                <img src="../assets/logos/logo_yard_sale.svg" alt="logo" class="logo">
+            </figure>
+            <form action="/login/index.html" class="login__form">
+                <label for="login__email" class="login__request">Email address</label>
+                <input type="text" class="login__sample" placeholder="camilayokoo@gmail.com">
+
+                <label for="login__password" class="login__request">Password</label>
+                <input type="password" class="login__sample" placeholder="**********">
+
+                <input type="submit" value="Log in" class="login__button">
+                <!-- <p class="login__recovery">Forgot my password</p> -->
+                <a href="/login/index.html" class="login__recovery">Forgot my password</a>
+            </form>
+            <input type="submit" class="login__sign-up" value="Sign up">
+        </div>
+    </div>
 </body>
 </html>

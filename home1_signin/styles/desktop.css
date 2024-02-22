@@ -1,0 +1,13 @@
+.home1__container-box {
+    padding-top: 10px;
+    width: 90%;
+    display: grid;
+    grid-template-rows: 5vh 18vh auto;
+    row-gap: 0vh;
+    /* align-content: space-evenly; */
+    /* border: solid; */
+}
+
+.line {
+    /* top: 70px; */
+}

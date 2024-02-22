@@ -1,0 +1,8 @@
+.logo {
+    display: none;
+}
+
+.login__sign-up {
+    position: inherit;
+    margin-top: 80px;
+}

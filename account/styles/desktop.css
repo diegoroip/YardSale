@@ -1,0 +1,131 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --primary-color: #ACD9B2;
+    --dark: #232830;
+}
+
+.form-container {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.icons-grid {
+    /* display: none; */
+    height: 8vh;
+
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: auto 1fr 2vw;
+    /* border: solid; */
+}
+
+.logo1 {
+    display: none;
+}
+
+.header-menu {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-self: left;
+    align-self: center;
+    justify-content: space-between;
+    /* border: solid; */
+    
+    list-style: none;
+    font-size: 2rem;
+    color: #C7C7C7;
+    /* gap: 30px; */
+}
+
+.header-menu fieldset {
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+
+.header-menu li{
+    padding: 5px 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.menu-1 {
+    border: solid 1px var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 10px;
+    line-height: 20px;
+}
+
+
+.logo3 {
+    justify-self: right;
+    /* height: 30px; */
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.logo2 {
+    order: -1;
+    justify-self: left;
+    height: 25px;
+    padding-right: 30px;
+    /* height: 100%; */
+    /* width: 100%; */
+}
+
+.form {
+    margin: 0;
+    position: absolute;
+    top: calc(40% - 410px / 2);
+
+
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto 1fr;
+    /* border: solid; */
+    width: 340px;
+    height: 410px;
+    align-self: center;
+    /* align-items: center; */
+}
+
+.form fieldset {
+    margin-top: 15px;
+}
+
+.login-button1 {
+    display: none;
+}
+
+.login-button2 {
+    display: block;
+    margin-top: 40px;
+    /* align-self: ; */
+    height: 59px;    
+    
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 23px;
+    font-family: 'Quicksand', sans-serif;
+    
+    border-radius: 8px;
+    color: var(--white);
+    border: solid 1px var(--primary-color);
+    background-color: #ACD9B2;
+
+    cursor: pointer;
+}

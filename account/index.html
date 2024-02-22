@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/tablet.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width:1024px)">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 
+        font-family: 'Quicksand', sans-serif; 
+    -->
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <div class="icons-grid">
+                <img src="../assets/icons/icon_menu.svg" alt="" class="logo1">
+                <ul class="header-menu">
+                    <fieldset>
+                        <li class="menu-1">All</li>
+                        <li>Clothes</li>
+                        <li>Electronics</li>
+                        <li>Furniture</li>
+                        <li>Toys</li>
+                        <li>Others</li>
+                    </fieldset>
+                    <li><a href="../account/index.html">Sign in</a></li>
+                </ul>
+                <img src="../assets/logos/logo_yard_sale.svg" alt="" class="logo2">
+                <img src="../assets/icons/icon_shopping_cart_notification.svg" alt="" class="logo3">
+            </div>
+            
+            <!-- <h1 class="title">My account</h1> -->
+
+            <form action="/account/index.html" class="form">
+                <!-- <h1 class="title">My account</h1> -->
+                <fieldset>
+                    <h1 class="title">My account</h1>
+                    <label for="name" class="label">Name</label>
+                    <input type="text" id="name" placeholder="Camila Yokoo" class="input-text">
+    
+                    <label for="email" class="label">Email address</label>
+                    <input type="text" id="email" placeholder="camilayokoo@gmail.com" class="input-text">
+    
+                    <label for="password" class="label">Password</label>
+                    <input type="password" id="password" placeholder="*********" class="input-text">
+                </fieldset>
+
+                <input type="submit" value="Save" class="login-button1">
+                <input type="submit" value="Edit" class="login-button2">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
